@@ -10,7 +10,6 @@ import Button from '../atoms/button';
 import NavMobile from './navMobile';
 import MenuIcon from '../atoms/icons/menuIcon';
 
-
 const Navbar = () => {
     const [scroll, setScroll] = useState(false);
     const [navMobileOpen, setNavMobileOpen] = useState(false);
@@ -20,7 +19,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.pageYOffset > 0) {
+            if (window.scrollY > 20) {
                 setScroll(true);
             } else {
                 setScroll(false);
@@ -35,7 +34,9 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav
+        <motion.nav
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
             className={`md:px-[4rem] px-4 w-full fixed top-0 left-0 right-0 z-50 flex items-center justify-between  py-5 transition-colors duration-300  ${scroll ? 'bg-black' : 'bg-transparent'
                 }`}
         >
@@ -50,45 +51,41 @@ const Navbar = () => {
                 </Link>
             </div>
             <div>
-                {isMobile ? (
-                    <div className='flex justify-center items-center'>
-                        <button
-                            className="text-white hover:text-gray-300 transition-colors duration-300"
-                            onClick={() => setNavMobileOpen(!navMobileOpen)}
-                        >
-                            <MenuIcon />
-                        </button>
-                        <AnimatePresence>
-                            {navMobileOpen && (
-                                <NavMobile
-                                    isMobile={isMobile}
-                                    setNavMobileOpen={setNavMobileOpen}
-                                    navMobileOpen={navMobileOpen}
-                                />
-                            )}
-                        </AnimatePresence>
-                    </div>
-                ) : (
-
-                    <ul className="flex items-center space-x-6">
-                        {links.map((link, index) => (
-                            <li key={index}>
-                                <Link href={link.hash}>
-                                    <p className="text-white hover:text-gray-300 transition-colors duration-300 md:text-[20px] text-[14px]">
-                                        {link.name}
-                                    </p>
-                                </Link>
-                            </li>
-                        ))}
-                        <li>
-                            <Button onClick={() => alert("Make An App Now")}>
-                                Make an App
-                            </Button>
+                <div className='md:hidden flex justify-center items-center'>
+                    <button
+                        className="text-white hover:text-gray-300 transition-colors duration-300"
+                        onClick={() => setNavMobileOpen(!navMobileOpen)}
+                    >
+                        <MenuIcon />
+                    </button>
+                    <AnimatePresence>
+                        {navMobileOpen && (
+                            <NavMobile
+                                isMobile={isMobile}
+                                setNavMobileOpen={setNavMobileOpen}
+                                navMobileOpen={navMobileOpen}
+                            />
+                        )}
+                    </AnimatePresence>
+                </div>
+                <ul className="md:flex hidden items-center space-x-6">
+                    {links.map((link, index) => (
+                        <li key={index}>
+                            <Link href={link.hash}>
+                                <p className="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[20px] md:text-[16px] text-[14px]">
+                                    {link.name}
+                                </p>
+                            </Link>
                         </li>
-                    </ul>
-                )}
+                    ))}
+                    <li>
+                        <Button onClick={() => alert("Make An App Now")}>
+                            Make an App
+                        </Button>
+                    </li>
+                </ul>
             </div>
-        </nav >
+        </motion.nav >
     );
 };
 

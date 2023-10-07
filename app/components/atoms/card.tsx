@@ -1,18 +1,18 @@
 import { cn } from '@/libs/utils';
 import React from 'react'
 
-type CardProductProps = {
+type CardProps = {
     children: React.ReactNode;
     className?: string;
     props?: React.HTMLAttributes<HTMLDivElement>;
 }
 
-export default function CardProduct(
+export default function Card(
     {
         children,
         className,
         ...props
-    }: CardProductProps
+    }: CardProps
 ) {
     return (
         <div className={cn("rounded-xl border border-white", className)} {...props}>
