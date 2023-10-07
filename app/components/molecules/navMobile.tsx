@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { links } from '@/libs/data'
 import Button from '../atoms/button'
+import TimesIcon from '../atoms/icons/timesIcon'
 
 type NavMobileProps = {
     navMobileOpen: boolean;
@@ -80,32 +81,19 @@ export default function NavMobile(
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed origin-top top-0 left-0 right-0 bottom-0 bg-black z-50 w-full h-screen text-white p-10">
+            className="fixed origin-top top-0 left-0 right-0 bottom-0 bg-[#00AD98] z-50 w-full h-screen text-white p-10">
             <div className='flex h-full flex-col'>
-                <div className='flex justify-between'>
+                <div className='flex justify-between items-center'>
                     <Link href="/">
                         <Image
-                            src="/images/logo.png"
+                            src="/images/logoWhite.png"
                             alt="logo"
-                            width={isMobile ? 100 : 150}
-                            height={isMobile ? 100 : 150}
+                            width={120}
+                            height={120}
                         />
                     </Link>
                     <button onClick={() => setNavMobileOpen(!navMobileOpen)}>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6 fill-current text-white"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            onClick={() => setNavMobileOpen(!navMobileOpen)}
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
+                        <TimesIcon />
                     </button>
                 </div>
                 <motion.ul
@@ -127,7 +115,7 @@ export default function NavMobile(
                     ))}
                     <div className='overflow-hidden'>
                         <motion.li variants={menuItemsMotion}>
-                            <Button onClick={() => alert("Make An App Now")}>
+                            <Button onClick={() => alert("Make An App Now")} className='bg-black text-white text-lg'>
                                 Make an App
                             </Button>
                         </motion.li>
