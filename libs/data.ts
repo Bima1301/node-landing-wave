@@ -146,3 +146,18 @@ export const otherServices = [
         title: "and many others",
     }
 ] as const;
+
+export const offersProduct = [
+    {
+        title: "Website",
+        realPrice: "Rp, 1.000.000",
+        finalPrice: "Rp, 500.000",
+        imgSrc: "/images/offerContent1.jpeg",
+    },
+    {
+        title: "Mobile Apps",
+        realPrice: "",
+        finalPrice: "Rp, 999.000",
+        imgSrc: "/images/offerContent2.jpeg",
+    },
+] as const;

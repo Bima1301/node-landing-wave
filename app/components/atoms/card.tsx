@@ -15,7 +15,7 @@ export default function Card(
     }: CardProps
 ) {
     return (
-        <div className={cn("rounded-xl border border-white", className)} {...props}>
+        <div className={cn("rounded-xl border border-white overflow-hidden", className)} {...props}>
             {children}
         </div>
     )

@@ -1,6 +1,7 @@
 import Navbar from './components/molecules/navbar'
 import Hero from './components/organism/hero'
 import HowWork from './components/organism/howWork'
+import OfferingProduct from './components/organism/offeringProduct'
 import Produk from './components/organism/produk'
 import Service from './components/organism/service'
 import Testimoni from './components/organism/testimoni'
@@ -16,6 +17,7 @@ export default function Home() {
       <Work />
       <HowWork />
       <Service />
+      <OfferingProduct />
     </main>
   )
 }
