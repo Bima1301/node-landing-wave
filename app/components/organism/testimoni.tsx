@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import Title from '../atoms/title'
 import Card from '../atoms/card'
 import { testimonials } from '@/libs/data'
+import TestimoniMobile from './testimoniMobile'
 
 export default function Testimoni() {
     const targetRef = useRef<HTMLDivElement | null>(null);
@@ -28,12 +29,13 @@ export default function Testimoni() {
                 </motion.div>
             </div>
             <div className='lg:hidden flex flex-col items-center overflow-hidden'>
-                <div className='flex flex-col gap-4 px-10'>
+                <div className='flex flex-col gap-4 px-10' >
                     {testimonials.map((item, index) => (
-                        <Card className='bg-white text-black px-5 py-4 rounded-md ' key={index}>
-                            <p className='mb-2'>{item.text}</p>
-                            <p className='text-[#00AD98] font-semibold'>{item.user}</p>
-                        </Card>
+                        <React.Fragment key={index}>
+                            <TestimoniMobile
+                                item={item}
+                            />
+                        </React.Fragment>
                     ))}
                 </div>
             </div>
