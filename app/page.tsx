@@ -7,7 +7,7 @@ import Work from './components/organism/work'
 
 export default function Home() {
   return (
-    <main className='min-w-full min-h-screen bg-black'>
+    <main className='min-w-full min-h-screen bg-black text-white'>
       <Navbar />
       <Hero />
       <Produk />

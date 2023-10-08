@@ -19,10 +19,12 @@ export default function Work() {
             animate={{ opacity: 1, y: 0 }}>
             <Title title="Our Works" className=" text-white md:mt-10 mb-14 xl:px-[12rem] lg:px-[8rem] px-10 text-center" />
             <div className='lg:flex hidden flex-col items-center overflow-hidden'>
-                <motion.div className='flex gap-8 px-10' style={{ x }}>
+                <motion.div className='flex gap-8 px-10 ' style={{ x }}>
                     {portfolio.map((item, index) => (
                         <Card key={index} className='flex flex-row gap-5 px-5 py-16 text-white relative min-w-[48rem] overflow-hidden'>
-                            <div className={`absolute top-0 left-0 w-full h-full ${item.bg} bg-cover brightness-50 blur-lg`} />
+                            <div className='absolute top-0 left-0 w-full h-full blur-xl'>
+                                <Image src={item.src} alt='work 1' fill className='z-10 rounded-lg' />
+                            </div>
                             <Image src={item.src} alt='work 1' width={500} height={500} className='z-10 rounded-lg' />
                             <div className='flex flex-col max-w-xs z-10'>
                                 <p className='text-center text-3xl font-semibold mb-5'>{item.title}</p>

@@ -8,11 +8,11 @@ import HeadIdeaIcon from '../atoms/icons/headIdeaIcon'
 
 export default function Hero() {
     return (
-        <motion.section className='min-h-full pt-20 relative' initial={{ opacity: 0 }}
+        <motion.section className='min-h-full pt-20 relative text-white' initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}>
             <div className='w-full h-16 absolute top-0 z-20 bg-gradient-to-t from-transparent to-black/40' />
 
-            <div className='absolute top-0 left-0 w-full h-full bg-[url(/images/hero.jpeg)] bg-cover brightness-50' />
+            <div className='absolute top-0 left-0 w-full h-full bg-[url(/images/hero.jpeg)] bg-cover md:brightness-50 md:bg-center bg-[center_-1rem]' />
             <div className='relative z-10 lg:pt-44 md:pt-20'>
                 <motion.div
                     initial={{ opacity: 0, y: -100 }}
