@@ -13,7 +13,7 @@ export default function Work() {
     })
     const x = useTransform(scrollYProgress, [0, 0.5, 2], [-300, 100, 800])
     return (
-        <motion.section ref={targetRef} className='md:mb-28 mb-20 relative xl:px-[4rem]' initial={{ opacity: 0, y: 100 }}
+        <motion.section ref={targetRef} className='md:mb-28 mb-20 relative xl:px-[4rem] px-10' initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}>
             <Title title="Our Works" className=" text-white md:mt-10 mb-14 xl:px-[12rem] lg:px-[8rem] px-10 text-center" />
             <div className='lg:flex hidden flex-col items-center overflow-hidden'>
