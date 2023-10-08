@@ -15,9 +15,9 @@ export default function Testimoni() {
 
     const x = useTransform(scrollYProgress, [0, 0.5, 1], [-300, 100, 300])
     return (
-        <motion.section ref={targetRef} className='md:mb-28 mb-20 relative ' initial={{ opacity: 0, y: 100 }}
+        <motion.section ref={targetRef} className=' mb-20 relative ' initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}>
-            <Title title="Testimoni" className=" text-white md:mt-10 mb-14 lg:px-[4rem] px-10 w-full text-start" />
+            <Title title="Testimoni" className=" text-white md:mt-10 mb-8 lg:px-[4rem] px-10 w-full text-start" />
             <div className='lg:flex hidden flex-col items-center overflow-hidden'>
                 <motion.div className='flex gap-4 px-10' style={{ x }}>
                     {testimonials.map((item, index) => (

@@ -23,6 +23,18 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+.service-content ul {
+  list-style: none;
+}
+
+.service-content ul li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
 #textimoni-list {
   overflow-x: scroll;
   -ms-overflow-style: none;

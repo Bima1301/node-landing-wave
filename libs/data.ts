@@ -1,3 +1,13 @@
+import BallIcon from "@/app/components/atoms/icons/ballIcon";
+import BookIcon from "@/app/components/atoms/icons/bookIcon";
+import ChatIcon from "@/app/components/atoms/icons/chatIcon";
+import CompanyIcon from "@/app/components/atoms/icons/companyIcon";
+import ConstructionIcon from "@/app/components/atoms/icons/constructionIcon";
+import ListIcon from "@/app/components/atoms/icons/listIcon";
+import MoneyCashierIcon from "@/app/components/atoms/icons/moneyCashierIcon";
+import ShopIcon from "@/app/components/atoms/icons/shopIcon";
+import workshopIcon from "@/app/components/atoms/icons/workshopIcon";
+
 export const links = [
     {
         name: "Website",
@@ -60,4 +70,79 @@ export const conversations = [
         imgProfil: "/images/person2.jpeg",
         chat: "How do I arrange our meeting on Monday at 10 WIB and my team will contact you again"
     },
+] as const;
+
+export const services = [
+    {
+        icon: ListIcon,
+        title: "Online Attendance",
+        description: `<p>With the times, your team may be able to work in the office or outside the office. Get the accuracy of your team&apos;s work hours with your own company&apos;s special online attendance feature with features such as:</p>
+        <p><br></p>
+        <ul>
+            <li>Clock in and Clock Out attendance</li>
+            <li>Face Photo</li>
+            <li>Face Recognition</li>
+            <li>Accurate time stamp down to seconds</li>
+            <li>GPS location of employees</li>
+        </ul>`
+    },
+    {
+        icon: BallIcon,
+        title: "Sport Center",
+        description: `<p>Create your sports center field booking application. Suitable for futsal, mini soccer, badminton, tennis, golf, basketball, to table tennis. Give your customers the freedom to</p>
+        <p><br></p>
+        <ul>
+            <li>Choose a booking schedule</li>
+            <li>Online payments</li>
+            <li>Automatic scheduling system</li>
+            <li>Search for Friends feature</li>
+            <li>Split Payment with team members</li>
+            <li>Information and announcements from you</li>
+        </ul>`
+    },
+    {
+        icon: BookIcon,
+        title: "Booking",
+        description: `<p>Offer your services in your own application to place orders to delivery directly to the client&apos;s house. Suitable for ac service, cleaning, cleaning service, CCTV, massage, and even other digital services. Features that can be made:</p>
+        <p><br></p>
+        <ul>
+            <li>Memilih jenis dan kategori jasa yang dikehendaki</li>
+            <li>Melakukan reservasi online dan pembayaran dengan metode pembayaran digital</li>
+            <li>Penjadwalan dengan tim lapangan</li>
+            <li>Aplikasi khusus untuk tim</li>
+            <li>Promosi dan Kode voucher khusus</li>
+        </ul>`
+    }
+
+] as const;
+
+export const otherServices = [
+    {
+        icon: ShopIcon,
+        title: "E-Commerce",
+    },
+    {
+        icon: CompanyIcon,
+        title: "Company Profile",
+    },
+    {
+        icon: MoneyCashierIcon,
+        title: "Cashier",
+    },
+    {
+        icon: workshopIcon,
+        title: "Workshop",
+    },
+    {
+        icon: ConstructionIcon,
+        title: "Construction",
+    },
+    {
+        icon: ChatIcon,
+        title: "Chat",
+    },
+    {
+        icon: "",
+        title: "and many others",
+    }
 ] as const;

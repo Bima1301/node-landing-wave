@@ -1,10 +1,10 @@
 import { cn } from '@/libs/utils'
 import React from 'react'
 
-type MenuIconProps = React.HTMLAttributes<HTMLDivElement>;
+type TimesIconProps = React.HTMLAttributes<HTMLDivElement>;
 
 export default function TimesIcon(
-    { className }: MenuIconProps
+    { className }: TimesIconProps
 ) {
     return (
         <svg

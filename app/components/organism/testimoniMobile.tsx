@@ -27,8 +27,8 @@ export default function TestimoniMobile(
             opacity: opacityProgess,
         }} className='w-full h-full overflow-hidden'>
             <Card className='bg-white text-black px-5 py-4 rounded-md ' >
-                <p className='mb-2'>{item.text}</p>
-                <p className='text-[#00AD98] font-semibold'>{item.user}</p>
+                <p className='mb-2 text-xs'>{item.text}</p>
+                <p className='text-[#00AD98] font-semibold text-sm'>{item.user}</p>
             </Card>
         </motion.div>
     )

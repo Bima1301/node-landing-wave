@@ -28,11 +28,11 @@ export default function WorkMobile(
             scale: scaleProgess,
             opacity: opacityProgess,
         }}>
-            <Card className='flex md:flex-row flex-col gap-5 px-5 lg:py-20 py-10 text-white relative lg:min-w-[48rem] overflow-hidden'>
+            <Card className='flex md:flex-row flex-col gap-5 px-5 lg:py-20 py-6 text-white relative lg:min-w-[48rem] overflow-hidden'>
                 <div className={`absolute top-0 left-0 w-full h-full ${item.bg} bg-cover brightness-50 blur-lg`} />
                 <Image src={item.src} alt='work 1' width={400} height={400} className='z-10 rounded-lg' />
                 <div className='flex flex-col lg:max-w-xs  z-10'>
-                    <p className='text-center md:text-3xl text-xl font-semibold mb-5'>{item.title}</p>
+                    <p className='text-center md:text-3xl text-lg font-semibold mb-5'>{item.title}</p>
                     <p className='lg:text-base md:text-sm text-xs'>{item.description}</p>
                 </div>
             </Card>

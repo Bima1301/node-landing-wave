@@ -15,7 +15,7 @@ export default function Title(
 ) {
     return (
         <div className={className} {...props}>
-            <h1 className="md:text-[32px] text-[18px] font-semibold">{title}</h1>
+            <h1 className="md:text-[32px] text-[20px] font-semibold">{title}</h1>
         </div>
     )
 }
