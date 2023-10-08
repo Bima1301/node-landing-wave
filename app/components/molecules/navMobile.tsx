@@ -115,7 +115,7 @@ export default function NavMobile(
                     ))}
                     <div className='overflow-hidden'>
                         <motion.li variants={menuItemsMotion}>
-                            <Button onClick={() => alert("Make An App Now")} className='bg-black text-white text-lg'>
+                            <Button onClick={() => alert("Make An App Now")} className='bg-black text-white text-lg hover:bg-black/80 mb-4'>
                                 Make an App
                             </Button>
                         </motion.li>

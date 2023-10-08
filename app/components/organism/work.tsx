@@ -13,7 +13,7 @@ export default function Work() {
     const { scrollYProgress } = useScroll({
         target: targetRef,
     })
-    const x = useTransform(scrollYProgress, [0, 0.5, 2], [-300, 100, 800])
+    const x = useTransform(scrollYProgress, [0, 0.5, 2], [-350, 100, 800])
     return (
         <motion.section ref={targetRef} className=' mb-20 relative xl:px-[4rem] px-10' initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}>

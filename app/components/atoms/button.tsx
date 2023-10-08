@@ -11,7 +11,7 @@ export default function Button(
     }: PillButtonProps
 ) {
     return (
-        <div className={cn('bg-[#00AD98] rounded-[29px] cursor-pointer py-3 px-4', className)} {...props}>
+        <div className={cn('bg-[#00AD98] hover:bg-[#67d0c4] rounded-[29px] cursor-pointer py-3 px-4 duration-200', className)} {...props}>
             {children}
         </div>
     )

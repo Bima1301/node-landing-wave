@@ -36,7 +36,7 @@ export default function Hero() {
                                 repeat: Infinity,
                             }}> <HeadIdeaIcon className='md:w-fit w-8 h-fit' /></motion.span> </p>
                     </div>
-                    <Button className='w-fit md:mb-8 mb-10 md:text-lg text-xs'>
+                    <Button className='w-fit md:mb-8 mb-10 md:text-lg text-xs hover:px-8 duration-300'>
                         Get Started Now
                     </Button>
                     <p className='lg:text-2xl md:text-base text-xs max-w-5xl '>Create Mobile Applications and Websites for Companies or Your Business Have a transparent pricing, easy and straightforward development process</p>
