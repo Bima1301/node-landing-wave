@@ -72,7 +72,7 @@ const Navbar = () => {
                     {links.map((link, index) => (
                         <li key={index}>
                             <Link href={link.hash}>
-                                <p className="text-white hover:text-gray-300 transition-colors duration-300 lg:text-[20px] md:text-[16px] text-[14px]">
+                                <p className="text-white hover:text-[#00AD98] transition-colors duration-300 lg:text-[20px] md:text-[16px] text-[14px]">
                                     {link.name}
                                 </p>
                             </Link>
