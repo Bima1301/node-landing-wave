@@ -43,7 +43,7 @@ const Navbar = () => {
             <div>
                 <Link href="/">
                     <Image
-                        src="/images/logoWhite.png"
+                        src="/images/whiteLogo.png"
                         alt="logo"
                         width={isMobile ? 120 : 150}
                         height={isMobile ? 120 : 150}

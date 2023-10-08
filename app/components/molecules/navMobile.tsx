@@ -86,7 +86,7 @@ export default function NavMobile(
                 <div className='flex justify-between items-center'>
                     <Link href="/">
                         <Image
-                            src="/images/logoWhite.png"
+                            src="/images/whiteLogo.png"
                             alt="logo"
                             width={120}
                             height={120}

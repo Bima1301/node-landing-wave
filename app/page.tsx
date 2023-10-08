@@ -1,4 +1,5 @@
 import Navbar from './components/molecules/navbar'
+import Footer from './components/organism/footer'
 import Hero from './components/organism/hero'
 import HowWork from './components/organism/howWork'
 import OfferingProduct from './components/organism/offeringProduct'
@@ -18,6 +19,7 @@ export default function Home() {
       <HowWork />
       <Service />
       <OfferingProduct />
+      <Footer />
     </main>
   )
 }

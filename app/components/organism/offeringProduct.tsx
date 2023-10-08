@@ -35,9 +35,7 @@ export default function OfferingProduct() {
                             </Button>
                         </div>
                         <div className='lg:w-full md:w-2/3 w-full relative '>
-                            <Image src={item.imgSrc} alt='Website' objectFit="cover"
-                                fill
-                                className="w-full h-full top-0 left-0 object-cover " />
+                            <Image src={item.imgSrc} alt='Offer' objectFit="cover" fill className="w-full h-full top-0 left-0 object-cover" />
                         </div>
                     </Card>
                 ))}
