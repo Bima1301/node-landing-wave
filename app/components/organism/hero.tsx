@@ -18,11 +18,23 @@ export default function Hero() {
                     initial={{ opacity: 0, y: -100 }}
                     animate={{ opacity: 1, y: 0 }}
                     className='md:px-[4rem] px-6 w-full md:py-0 py-16'>
-                    <CodeIcon className='md:-ms-5 -ms-3 md:w-fit w-6' />
+                    <motion.div
+                        animate={{ x: [0, 10, 0] }}
+                        transition={{
+                            duration: 4,
+                            repeat: Infinity,
+                        }}
+                    >
+                        <CodeIcon className='md:-ms-5 -ms-3 md:w-fit w-6' />
+                    </motion.div>
                     <div className='lg:text-5xl md:text-4xl text-2xl font-semibold md:space-y-4 space-y-2 md:mb-5 mb-8'>
                         <p>Make Your Own </p>
                         <p>Website and Mobile Application</p>
-                        <p className='inline-flex items-center'>With Nodewave <HeadIdeaIcon className='md:w-fit w-8 h-fit' /> </p>
+                        <p className='inline-flex items-center'>With Nodewave <motion.span animate={{ scale: [1, 1.12, 1] }}
+                            transition={{
+                                duration: 3,
+                                repeat: Infinity,
+                            }}> <HeadIdeaIcon className='md:w-fit w-8 h-fit' /></motion.span> </p>
                     </div>
                     <Button className='w-fit md:mb-8 mb-10 md:text-lg text-xs'>
                         Get Started Now
