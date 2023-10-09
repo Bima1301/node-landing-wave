@@ -26,6 +26,7 @@ export default function Service() {
                 pauseOnHover={true}
                 gradient={true}
                 gradientColor='black'
+                gradientWidth={50}
             >
                 {otherServices.map((item, index) => (
                     <p className='inline-flex items-center w-fit mx-5 gap-3' key={index}>{item.icon && <item.icon className='w-8' />} {item.title}</p>

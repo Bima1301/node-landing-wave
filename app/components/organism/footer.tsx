@@ -20,7 +20,7 @@ export default function Footer() {
                 Phone : +62811258280 <br />
                 Email : support@nodewave.id <br />
             </p>
-            <div className='flex flex-row md:gap-5 gap-3 '>
+            <div className='flex flex-row md:gap-5 gap-3 pb-4'>
                 <a href="https://www.facebook.com/profile.php?id=100094647258015" target='_blank'>
                     <FacebookIcon className='md:w-auto w-5' />
                 </a>

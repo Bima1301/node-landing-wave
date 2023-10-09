@@ -20,7 +20,7 @@ export default function Produk() {
                     <Card className='cursor-pointer bg-white md:px-10 px-3 md:py-12 py-4 text-black flex flex-row items-end gap-3 md:justify-around lg:justify-normal'>
                         <UiDesignIcon className='mb-2 lg:w-[130px] md:w-[80px] w-14' />
                         <div className='flex flex-col'>
-                            <p className='font-semibold lg:text-2xl md:text-xl text-md mb-2'>Mobile Apps</p>
+                            <p className='font-semibold lg:text-2xl md:text-xl text-lg mb-2'>Mobile Apps</p>
                             <p className='lg:text-base md:text-sm text-xs w-fit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </div>
                         <ArrowRight className='md:w-16 w-10' />
@@ -28,7 +28,7 @@ export default function Produk() {
                     <Card className='cursor-pointer bg-black md:px-10 px-3 md:py-12 py-4 text-white flex flex-row items-end gap-3  md:justify-around lg:justify-normal md:mx-5 md:hover:mx-0 duration-200'>
                         <WebDesignIcon className='mb-2 lg:w-[130px] md:w-[80px] w-14' />
                         <div className='flex flex-col'>
-                            <p className='font-semibold lg:text-2xl md:text-xl text-md mb-2'>Mobile Apps</p>
+                            <p className='font-semibold lg:text-2xl md:text-xl text-lg mb-2'>Mobile Apps</p>
                             <p className='lg:text-base md:text-sm text-xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         </div>
                         <ArrowRight className='md:w-16 w-10' />
@@ -40,9 +40,9 @@ export default function Produk() {
                         <Image src='/images/iphoneIcon.png' alt='Phone' width={70} height={70} />
                         <Image src='/images/iphoneIcon.png' alt='Phone' width={70} height={70} />
                     </div>
-                    <p className='font-semibold lg:text-2xl md:text-xl text-md'>Mobile Apps</p>
+                    <p className='font-semibold lg:text-2xl md:text-xl text-lg'>Mobile Apps</p>
                     <p className='mb-2 lg:text-base md:text-sm text-xs'>Mobile apps Android dan iPhone sekaligus, buat aplikasi dengan fitur sesuka anda. Bisa untuk aplikasi transaksi jual beli, Aplikasi kasir, Aplikasi Informasi, maupun Aplikasi chat dengan fitur GPS.</p>
-                    <Button className='rounded-lg md:w-fit w-full text-white font-semibold lg:text-base md:text-sm text-xs'>
+                    <Button className='rounded-lg md:w-fit w-full text-white font-semibold lg:text-base md:text-sm text-sm'>
                         Pelajari Selengkapnya
                     </Button>
                 </Card>
