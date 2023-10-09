@@ -35,7 +35,7 @@ export default function OfferProductCard(
         }} className='w-full h-full'>
             <Card className='border-transparent flex flex-row w-full md:min-h-[338px] min-h-[280px] max-w-[525px]'>
                 <div className='w-full bg-white text-[#333] flex flex-col justify-between items-center py-10 min-w-[50%]'>
-                    <p className='md:text-3xl text-lg font-bold'>{item.title}</p>
+                    <p className='md:text-3xl text-lg font-bold text-center w-full px-4'>{item.title}</p>
                     <div className='text-center'>
                         <p className='md:text-xl font-bold md:mb-0 mb-2'>Start from</p>
                         {item.realPrice && (
