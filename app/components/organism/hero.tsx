@@ -30,16 +30,16 @@ export default function Hero() {
                     <div className='lg:text-5xl md:text-4xl text-2xl font-semibold md:space-y-4 space-y-2 md:mb-5 mb-8'>
                         <p>Make Your Own </p>
                         <p>Website and Mobile Application</p>
-                        <p className='inline-flex items-center'>With Nodewave <motion.span animate={{ scale: [1, 1.12, 1] }}
+                        <p className='inline-flex items-center'>With Nodewave <motion.span animate={{ x: [0, 10, 0] }}
                             transition={{
                                 duration: 3,
                                 repeat: Infinity,
                             }}> <HeadIdeaIcon className='md:w-fit w-8 h-fit' /></motion.span> </p>
                     </div>
-                    <Button className='w-fit md:mb-8 mb-10 md:text-lg text-xs hover:px-8 duration-300'>
+                    <Button className='w-fit md:mb-8 mb-10 md:text-lg text-sm hover:px-8 duration-300'>
                         Get Started Now
                     </Button>
-                    <p className='lg:text-2xl md:text-base text-xs max-w-5xl '>Create Mobile Applications and Websites for Companies or Your Business Have a transparent pricing, easy and straightforward development process</p>
+                    <p className='lg:text-2xl md:text-base text-sm max-w-5xl '>Create Mobile Applications and Websites for Companies or Your Business Have a transparent pricing, easy and straightforward development process</p>
                 </motion.div>
                 <div className='w-full h-20 bg-gradient-to-b from-black/30 via-black/60 to-black md:mt-20 mt-12' />
             </div>
