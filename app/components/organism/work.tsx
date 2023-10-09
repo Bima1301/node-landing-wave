@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import Title from '../atoms/title'
 import Card from '../atoms/card'
 import Image from 'next/image'
-import WorkMobile from './workMobile'
+import WorkMobile from '../molecules/workMobile'
 import { portfolio } from '@/libs/data'
 
 export default function Work() {
@@ -22,9 +22,11 @@ export default function Work() {
                 <motion.div className='flex gap-8 px-10 ' style={{ x }}>
                     {portfolio.map((item, index) => (
                         <Card key={index} className='flex flex-row gap-5 px-5 py-16 text-white relative min-w-[48rem] overflow-hidden'>
-                            <div className='absolute top-0 left-0 w-full h-full blur-xl'>
-                                <Image src={item.src} alt='work 1' fill className='z-10 rounded-lg' />
-                            </div>
+                            {item.src && (
+                                <div className='absolute top-0 left-0 w-full h-full blur-xl'>
+                                    <Image src={item.src} alt='work 1' fill className='z-10 rounded-lg' priority />
+                                </div>
+                            )}
                             <Image src={item.src} alt='work 1' width={500} height={500} className='z-10 rounded-lg' />
                             <div className='flex flex-col max-w-xs z-10'>
                                 <p className='text-center text-3xl font-semibold mb-5'>{item.title}</p>

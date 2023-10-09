@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import Title from '../atoms/title'
 import Card from '../atoms/card'
 import { testimonials } from '@/libs/data'
-import TestimoniMobile from './testimoniMobile'
+import TestimoniMobile from '../molecules/testimoniMobile'
 
 export default function Testimoni() {
     const targetRef = useRef<HTMLDivElement | null>(null);

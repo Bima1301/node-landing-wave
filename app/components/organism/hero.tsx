@@ -21,7 +21,7 @@ export default function Hero() {
                     <motion.div
                         animate={{ x: [0, 10, 0] }}
                         transition={{
-                            duration: 4,
+                            duration: 2,
                             repeat: Infinity,
                         }}
                     >
@@ -30,11 +30,7 @@ export default function Hero() {
                     <div className='lg:text-5xl md:text-4xl text-2xl font-semibold md:space-y-4 space-y-2 md:mb-5 mb-8'>
                         <p>Make Your Own </p>
                         <p>Website and Mobile Application</p>
-                        <p className='inline-flex items-center'>With Nodewave <motion.span animate={{ x: [0, 10, 0] }}
-                            transition={{
-                                duration: 3,
-                                repeat: Infinity,
-                            }}> <HeadIdeaIcon className='md:w-fit w-8 h-fit' /></motion.span> </p>
+                        <p className='inline-flex items-center'>With Nodewave <HeadIdeaIcon className='md:w-fit w-8 h-fit' /></p>
                     </div>
                     <Button className='w-fit md:mb-8 mb-10 md:text-lg text-sm hover:px-8 duration-300'>
                         Get Started Now
