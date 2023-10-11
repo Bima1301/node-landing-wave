@@ -24,7 +24,7 @@ export default function Footer() {
                 <a href="https://www.facebook.com/profile.php?id=100094647258015" target='_blank'>
                     <FacebookIcon className='md:w-auto w-5' />
                 </a>
-                <a href="https://twitter.com/nodewave" target='_blank'>
+                <a href="https://www.nodewave.id/en" target='_blank'>
                     <TwitterIcon className='md:w-auto w-5' />
                 </a>
                 <a href="https://www.nodewave.id/en" target='_blank'>
