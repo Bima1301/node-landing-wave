@@ -58,6 +58,7 @@ const Navbar = () => {
                     <button
                         className="text-white hover:text-gray-300 transition-colors duration-300"
                         onClick={() => setNavMobileOpen(!navMobileOpen)}
+                        aria-label="Menu"
                     >
                         <MenuIcon />
                     </button>

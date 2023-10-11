@@ -21,19 +21,29 @@ export default function Footer() {
                 Email : support@nodewave.id <br />
             </p>
             <div className='flex flex-row md:gap-5 gap-3 pb-4'>
-                <a href="https://www.facebook.com/profile.php?id=100094647258015" target='_blank'>
+                <a href="https://www.facebook.com/profile.php?id=100094647258015" target='_blank'
+                    aria-label='Facebook'
+                >
                     <FacebookIcon className='md:w-auto w-5' />
                 </a>
-                <a href="https://www.nodewave.id/en" target='_blank'>
+                <a href="https://www.nodewave.id/en" target='_blank'
+                    aria-label='Twitter'
+                >
                     <TwitterIcon className='md:w-auto w-5' />
                 </a>
-                <a href="https://www.nodewave.id/en" target='_blank'>
+                <a href="https://www.nodewave.id/en" target='_blank'
+                    aria-label='Youtube'
+                >
                     <YoutubeIcon className='md:w-auto w-5' />
                 </a>
-                <a href="https://www.linkedin.com/company/nodewaveindonesia/?originalSubdomain=id" target='_blank'>
+                <a href="https://www.linkedin.com/company/nodewaveindonesia/?originalSubdomain=id" target='_blank'
+                    aria-label='Linkedin'
+                >
                     <LinkedinIcon className='md:w-auto w-5' />
                 </a>
-                <a href="https://www.instagram.com/nodewave.id/" target='_blank'>
+                <a href="https://www.instagram.com/nodewave.id/" target='_blank'
+                    aria-label='Instagram'
+                >
                     <InstagramIcon className='md:w-auto w-5' />
                 </a>
             </div>

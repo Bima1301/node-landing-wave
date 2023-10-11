@@ -10,7 +10,7 @@ export default function HowWork() {
     return (
         <motion.section className='xl:px-[12rem] lg:px-[8rem] px-10  mb-20 relative pb-12' initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}>
-            <div className='absolute top-0 left-0 w-full h-full bg-[url(/images/howWorkBg.jpeg)] bg-cover' />
+            <div className='absolute top-0 left-0 w-full h-full bg-[url(/images/howWorkBg.jpg)] bg-cover' />
             <div className='z-10 relative flex justify-center items-center flex-col h-fit 14'>
                 <Title title="How We Work" className="text-center text-white md:mt-10 md:mb-14 my-8" />
                 <div className='bg-[url(/images/howWorkContent.jpeg)] flex md:flex-row flex-col-reverse md:items-start items-center p-5 rounded-lg md:max-w-[773px] max-w-full'>
